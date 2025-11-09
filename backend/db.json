@@ -1,0 +1,626 @@
+{
+  "users": [
+    {
+      "id": "u_admin",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "u_user1",
+      "username": "user1",
+      "password": "user123",
+      "role": "consumer"
+    }
+  ],
+  "slots": [
+    {
+      "id": "S1",
+      "status": "free",
+      "currentBooking": null,
+      "accessGranted": false
+    },
+    {
+      "id": "S2",
+      "status": "free",
+      "currentBooking": null,
+      "accessGranted": false
+    },
+    {
+      "id": "S3",
+      "status": "free",
+      "currentBooking": null,
+      "accessGranted": false
+    }
+  ],
+  "bookings": [
+    {
+      "id": "d2350563-ce34-48b6-ba8f-4b6cbf923ad4",
+      "userId": "u_user1",
+      "slotId": "S1",
+      "startTime": "2025-11-08T14:11:31.211Z",
+      "endTime": null,
+      "status": "cancelled",
+      "createdAt": "2025-11-08T14:11:31.211Z"
+    },
+    {
+      "id": "33a52117-6a55-452d-92e6-a5e4c88b7e16",
+      "userId": "u_user1",
+      "slotId": "S1",
+      "startTime": "2025-11-08T20:07",
+      "duration": 60,
+      "endTime": "2025-11-08T15:37:00.000Z",
+      "status": "cancelled",
+      "createdAt": "2025-11-08T14:33:58.952Z"
+    },
+    {
+      "id": "f29d6aae-cecc-4b17-a228-22f77eb96914",
+      "userId": "u_user1",
+      "slotId": "S2",
+      "startTime": "2025-11-08T20:15",
+      "duration": 60,
+      "endTime": "2025-11-08T15:45:00.000Z",
+      "status": "entered",
+      "createdAt": "2025-11-08T14:42:42.819Z"
+    },
+    {
+      "id": "523ed298-dcaf-471f-a74d-b9bf42265868",
+      "userId": "u_user1",
+      "slotId": "S3",
+      "startTime": "2025-11-08T20:25",
+      "duration": 60,
+      "endTime": "2025-11-08T15:55:00.000Z",
+      "status": "entered",
+      "createdAt": "2025-11-08T14:42:54.650Z"
+    },
+    {
+      "id": "940a804c-ee03-491e-843a-8d2732af3851",
+      "userId": "u_user1",
+      "slotId": "S1",
+      "startTime": "2025-11-08T20:35",
+      "duration": 60,
+      "endTime": "2025-11-08T16:05:00.000Z",
+      "status": "cancelled",
+      "createdAt": "2025-11-08T14:43:07.313Z"
+    }
+  ],
+  "logs": [
+    {
+      "slotId": "S1",
+      "entryTime": "unknown",
+      "exitTime": "2025-11-08T14:08:00.263Z",
+      "vehicle": null,
+      "note": "auto-exit"
+    },
+    {
+      "slotId": "S2",
+      "entryTime": "unknown",
+      "exitTime": "2025-11-08T14:08:00.263Z",
+      "vehicle": null,
+      "note": "auto-exit"
+    },
+    {
+      "slotId": "S3",
+      "entryTime": "unknown",
+      "exitTime": "2025-11-08T14:08:00.263Z",
+      "vehicle": null,
+      "note": "auto-exit"
+    },
+    {
+      "slotId": "S3",
+      "entryTime": "unknown",
+      "exitTime": "2025-11-08T14:08:13.472Z",
+      "vehicle": null,
+      "note": "auto-exit"
+    },
+    {
+      "slotId": "S1",
+      "entryTime": "unknown",
+      "exitTime": "2025-11-08T14:09:41.116Z",
+      "vehicle": null,
+      "note": "auto-exit"
+    },
+    {
+      "id": "86bd2f5d-2396-4904-9e1b-50152f2777e8",
+      "timestamp": "2025-11-08T14:33:12.570Z",
+      "note": "Slot S1 changed from free to occupied"
+    },
+    {
+      "id": "c28d0905-4baa-4607-b377-8a402eb1b923",
+      "timestamp": "2025-11-08T14:33:12.570Z",
+      "note": "Slot S2 changed from free to occupied"
+    },
+    {
+      "id": "7f68c913-653b-4bc4-a6be-6c01284b7343",
+      "timestamp": "2025-11-08T14:33:12.570Z",
+      "note": "Slot S3 changed from free to occupied"
+    },
+    {
+      "id": "65e8fbdf-9a76-40ab-b2db-f831843b447b",
+      "timestamp": "2025-11-08T14:33:18.861Z",
+      "note": "Slot S1 changed from occupied to free"
+    },
+    {
+      "id": "7cbac1fd-71a4-4320-9c55-c9109af6f0e7",
+      "timestamp": "2025-11-08T14:33:18.861Z",
+      "note": "Slot S2 changed from occupied to free"
+    },
+    {
+      "id": "7a4096a5-5856-42c8-b637-fa7d3be3792a",
+      "timestamp": "2025-11-08T14:33:18.861Z",
+      "note": "Slot S3 changed from occupied to free"
+    },
+    {
+      "id": "e5fa1d31-b4f8-4387-9913-ccf1ae47db9a",
+      "timestamp": "2025-11-08T14:43:33.087Z",
+      "note": "Slot S1 changed from booked to occupied"
+    },
+    {
+      "id": "c24067ab-bd1d-467f-bdc5-4846fb8b78a7",
+      "timestamp": "2025-11-08T14:43:39.316Z",
+      "note": "Slot S1 changed from occupied to free"
+    },
+    {
+      "id": "f64dd333-88ca-4a90-ad65-3f0b43e1a109",
+      "timestamp": "2025-11-08T14:46:35.386Z",
+      "note": "Slot S1 changed from free to occupied"
+    },
+    {
+      "id": "740a6a7b-8e14-4feb-afa5-d281311ca6f2",
+      "timestamp": "2025-11-08T14:46:35.386Z",
+      "note": "Slot S2 changed from booked to occupied"
+    },
+    {
+      "id": "419c3c0d-2f22-48ca-a156-796496cacbc0",
+      "timestamp": "2025-11-08T14:46:35.386Z",
+      "note": "Slot S3 changed from booked to occupied"
+    },
+    {
+      "id": "c5658e3b-1627-42eb-a6be-658e1a842bef",
+      "timestamp": "2025-11-08T14:46:43.761Z",
+      "note": "Slot S1 changed from occupied to free"
+    },
+    {
+      "id": "62e9e995-4bcf-472c-9d56-daf54a992a3a",
+      "timestamp": "2025-11-08T14:46:43.761Z",
+      "note": "Slot S2 changed from occupied to free"
+    },
+    {
+      "id": "ca74156a-8bfa-4004-a0c2-8751ccb53a54",
+      "timestamp": "2025-11-08T14:46:43.761Z",
+      "note": "Slot S3 changed from occupied to free"
+    },
+    {
+      "id": "fbc15c47-88e7-42d3-9ac3-6e209a87f470",
+      "timestamp": "2025-11-08T14:54:06.447Z",
+      "note": "Slot S1 changed from free to occupied"
+    },
+    {
+      "id": "69337196-eb9a-45d3-959e-948cc766bf27",
+      "timestamp": "2025-11-08T14:54:06.447Z",
+      "note": "Slot S2 changed from free to occupied"
+    },
+    {
+      "id": "0429d73b-f22b-4449-9c3a-00ce0355907f",
+      "timestamp": "2025-11-08T14:54:06.447Z",
+      "note": "Slot S3 changed from free to occupied"
+    },
+    {
+      "id": "def883ea-3549-4649-b0d5-9bb70289354c",
+      "timestamp": "2025-11-08T14:54:12.813Z",
+      "note": "Slot S1 changed from occupied to free"
+    },
+    {
+      "id": "c9e9187e-1c6b-4ab0-a337-8a22f1bcbd65",
+      "timestamp": "2025-11-08T14:54:12.813Z",
+      "note": "Slot S2 changed from occupied to free"
+    },
+    {
+      "id": "63af22f6-b932-40a7-a9fa-a1b599674602",
+      "timestamp": "2025-11-08T14:54:12.813Z",
+      "note": "Slot S3 changed from occupied to free"
+    }
+  ],
+  "history": [
+    {
+      "time": "2025-11-08T15:03:12.286Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:14.375Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:16.493Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:18.564Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:20.658Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:22.760Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:24.843Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:26.937Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:29.030Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:31.127Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:33.219Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:35.339Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:37.406Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:39.506Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:41.592Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:43.735Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:45.799Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:47.886Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:49.968Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:52.067Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:54.163Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:56.264Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:03:58.342Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:00.432Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:02.743Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:05.168Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:07.457Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:09.332Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:11.423Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:13.521Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:15.620Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:17.719Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:19.796Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:21.919Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:24.068Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:26.056Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:28.143Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:30.241Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:32.317Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:34.412Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:36.560Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:38.593Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:40.681Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:42.775Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:44.919Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:47.004Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:49.059Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:51.151Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:53.249Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:55.341Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:57.433Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:04:59.523Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:01.615Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:03.711Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:05.802Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:07.893Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:09.989Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:12.192Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:14.176Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:16.268Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:18.363Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:20.457Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:22.551Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:24.644Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:26.754Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:28.839Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:30.927Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:33.022Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:35.114Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:37.505Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:39.300Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:41.415Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:43.485Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:45.576Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:47.829Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:49.767Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:51.858Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:53.949Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:05:58.517Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:00.754Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:02.852Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:04.942Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:07.052Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:09.135Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:11.230Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:13.329Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:15.418Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:17.517Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:19.611Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:21.758Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:23.858Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:25.891Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:27.983Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:30.077Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:32.169Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:34.261Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:36.362Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:06:38.451Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:10:31.878Z",
+      "occupied": 0
+    },
+    {
+      "time": "2025-11-08T15:10:33.962Z",
+      "occupied": 0
+    }
+  ]
+}
